@@ -257,7 +257,7 @@ def parse_arguments():
 	parser = argparse.ArgumentParser(description='Read the SICK dataset files')
 	parser.add_argument('--media', metavar = 'media', required = True, help='Media to scrap. Options: El_Pais, El_Mundo, ABC, El_Periodico', choices=['El_Pais', 'El_Mundo', 'ABC', 'El_Periodico'])
 	parser.add_argument('--which', metavar='PAGE', required=True, help='Number of the page to start scrapping')
-	parser.add_argument('--n_page', metavar='N_PAGE', required=True, help='Number of pages to keep on scrapping')
+	parser.add_argument('--n_page', metavar='N_PAGE', required=True, help='Number of pages to keep on scrapping', argument_default='1')
 	parser.add_argument('--out', metavar = 'data', required = True, help='Define the CSV to save the data')
 
 	args = parser.parse_args()
@@ -280,7 +280,7 @@ def main():
 			if args.media == 'El_Pais':
 				n -= 1
 				news = get_news_elPais(page) # 91273
-				page -= 1
+				page += 1
 				for row in news:
 					info_news = elPais_scraper(row['link']) 
 					for key, value in info_news.items():
