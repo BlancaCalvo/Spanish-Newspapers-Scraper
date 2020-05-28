@@ -1,16 +1,16 @@
 # File name: news_scraper.py
-# Description: Scrape the political news from El Pais, El Periódico, El Mundo and ABC
+# Description: Scrapes the political news from El Pais, El Periódico, El Mundo and ABC
 # Author: Blanca Calvo Figueras
 # Date: 02-02-2020
 
 # How to run: 
-# From El Pais: python3 news_scraper.py --media El_Pais --which 91273 --n_page 3 --out elpais_trial.csv
+# For El Pais: python3 news_scraper.py --media El_Pais --which 91273 --n_page 3 --out elpais_trial.csv
 # 		where --which is the page to start scraping from and --n_pages the number of pages to scrape
-# From El Mundo: python3 news_scraper.py --media El_Mundo --which 01 --n_page 1 --out elmundo_trial.csv
+# For El Mundo: python3 news_scraper.py --media El_Mundo --which 01 --n_page 1 --out elmundo_trial.csv
 # 		where --which is the month of the year to scrape. --n_page should not be changed.
-# From ABC: python3 news_scraper.py --media ABC --which 2 --n_page 2 --out ABC_trial.csv
+# For ABC: python3 news_scraper.py --media ABC --which 2 --n_page 2 --out ABC_trial.csv
 #		where --which is the page to start scraping from and --n_pages the number of pages to scrape
-# From El Periodico: python3 news_scraper.py --media El_Periodico --which 614 --n_page 1000 --out elPeriodico_4.csv
+# For El Periodico: python3 news_scraper.py --media El_Periodico --which 614 --n_page 1000 --out elPeriodico_4.csv
 # 		where --which is the page to start scraping from and --n_pages the number of pages to scrape
 
 import pandas as pd
