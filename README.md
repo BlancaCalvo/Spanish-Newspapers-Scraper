@@ -1,7 +1,13 @@
 # Spanish-Newspapers-Scraper
 Find a python script to scrape the political news of four main newspapers in Spain: El Pais, El Mundo, El Peródico, ABC. 
 
-The script of this project can be used to download the political news from the mentioned Spanish newspapers in 2019. If you use this script, please citate the github post. If you need to make changes to the script, you can contact me at blancacalvofigueras@gmail.com . Changes in the websites of these newspapers can prevent the script from working properly.
+The code of this project can be used to download the political news from the mentioned Spanish newspapers in 2019. If you use this script, please citate the github post. If you need to make changes to the script, you can contact me at blancacalvofigueras@gmail.com . Changes in the websites of these newspapers can prevent the script from working properly.
+
+Run:
+
+```
+pip install -r requirements.txt
+```
 
 The script should be run as follows. 
 
